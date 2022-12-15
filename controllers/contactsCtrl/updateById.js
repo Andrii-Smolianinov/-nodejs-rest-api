@@ -1,15 +1,16 @@
-const contacts = require("../../models/contactsModels");
+// const contacts = require("../../models/contactsModels");
+// const Contact = require("../../models/contact")
 
-const { HttpError } = require("../../helpers");
+// const { HttpError } = require("../../helpers");
 
 const updateById = async (req, res, next) => {
-  const { contactId } = req.params;
-  const result = await contacts.updateContactById(contactId, req.body);
-  if (!result) {
-    throw HttpError(404, "Not Found");
-  }
+  // const { contactId } = req.params;
+  // const result = await contacts.updateContactById(contactId, req.body);
+  // if (!result) {
+  //   throw HttpError(404, "Not Found");
+  // }
 
-  res.json(result);
+  // res.json(result);
 };
 
 module.exports = updateById;
