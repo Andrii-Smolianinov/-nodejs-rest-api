@@ -1,18 +1,17 @@
-// const contacts = require("../../models/contactsModels");
-// const Contact = require("../../models/contact")
+const { Contact } = require("../../models/contact");
 
-// const { HttpError } = require("../../helpers");
+const { HttpError } = require("../../helpers");
 
-const removeById = async (req, res, next) => {
-  // const { contactId } = req.params;
-  // const result = await contacts.deleteContact(contactId);
+const removeById = async (req, res) => {
+  const { contactId } = req.params;
+  const result = await Contact.findByIdAndRemove(contactId)
 
-  // if (!result) {
-  //   throw HttpError(404, "Not Found");
-  // }
-  // res.json({
-  //   message: "Delete success",
-  // });
+  if (!result) {
+    throw HttpError(404, "Not Found");
+  }
+  res.json({
+    message: "Delete success",
+  });
 };
 
 module.exports = removeById;
