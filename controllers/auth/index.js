@@ -6,9 +6,15 @@ const getCurrent = require("./getCurrent")
 
 const logout = require("./logout")
 
+const updateAvatar = require("./updateAvatar")
+
+const resizeAvartar = require("./resizeAvartar")
+
 module.exports = {
     register,
     login,
     getCurrent,
     logout,
+    updateAvatar,
+    resizeAvartar,
 }
