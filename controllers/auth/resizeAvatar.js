@@ -1,6 +1,6 @@
 const Jimp = require("jimp");
 
-const resizeAvartar = async (req, res, next) => {
+const resizeAvatar = async (req, res, next) => {
   const path = req.file.path;
 
   try {
@@ -13,4 +13,4 @@ const resizeAvartar = async (req, res, next) => {
   }
 };
 
-module.exports = resizeAvartar;
+module.exports = resizeAvatar;

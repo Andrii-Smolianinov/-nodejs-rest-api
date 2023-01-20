@@ -1,20 +1,26 @@
-const register = require("./register")
+const register = require("./register");
 
-const login = require("./login")
+const login = require("./login");
 
-const getCurrent = require("./getCurrent")
+const getCurrent = require("./getCurrent");
 
-const logout = require("./logout")
+const logout = require("./logout");
 
-const updateAvatar = require("./updateAvatar")
+const updateAvatar = require("./updateAvatar");
 
-const resizeAvartar = require("./resizeAvartar")
+const resizeAvatar = require("./resizeAvatar");
+
+const verify = require("./verify");
+
+const resendVerifyEmail = require("./resendVerifyEmail");
 
 module.exports = {
-    register,
-    login,
-    getCurrent,
-    logout,
-    updateAvatar,
-    resizeAvartar,
-}
+  register,
+  login,
+  getCurrent,
+  logout,
+  updateAvatar,
+  resizeAvatar,
+  verify,
+  resendVerifyEmail,
+};
